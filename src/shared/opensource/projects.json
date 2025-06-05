@@ -1,0 +1,124 @@
+{
+   "data":[
+      {
+         "id":"R_kgDOOBsb4g",
+         "name":"PlantScan",
+         "createdAt":"2025-03-02T00:38:37Z",
+         "url":"https://github.com/Chaimaaorg/PlantScan",
+         "description":"Web application enabling farmers and agricultural specialists to quickly identify plant diseases.",
+         "isFork":false,
+         "languages":[
+            {
+               "name":"Python",
+               "iconifyClass":"logos-python"
+            },
+            {
+               "name":"JavaScript",
+               "iconifyClass":"logos-javascript"
+            },
+            {
+               "name":"HTML",
+               "iconifyClass":"logos-html-5"
+            },
+            {
+               "name":"CSS",
+               "iconifyClass":"logos-css-3"
+            },
+            {
+               "name":"Jupyter Notebook",
+               "iconifyClass":"logos-jupyter"
+            }
+         ]
+      },
+      {
+         "id":"R_kgDONzL-SA",
+         "name":"Platform-for-Real-Estate-Price-Forcasting",
+         "createdAt":"2025-02-02T14:29:25Z",
+         "url":"https://github.com/Chaimaaorg/Platform-for-Real-Estate-Price-Forcasting",
+         "description":"Real Estate Price Forecasting Platform with Python, Kaggle, HTML, CSS, JavaScript, Flask, Pandas, and scikit-learn",
+         "isFork":false,
+         "languages":[
+            {
+               "name":"Jupyter Notebook",
+               "iconifyClass":"logos-jupyter"
+            },
+            {
+               "name":"Python",
+               "iconifyClass":"logos-python"
+            }
+         ]
+      },
+      {
+         "id":"R_kgDOOLRYjQ",
+         "name":"SummarizeBot",
+         "createdAt":"2025-03-19T14:30:34Z",
+         "url":"https://github.com/Chaimaaorg/SummarizeBot",
+         "description":"This is a project of a summarization chatbot project using fastapi , langchain and hugging face",
+         "isFork":false,
+         "languages":[
+            {
+               "name":"Python",
+               "iconifyClass":"logos-python"
+            },
+            {
+               "name":"Dockerfile",
+               "iconifyClass":"simple-icons:docker"
+            },
+            {
+               "name":"Shell",
+               "iconifyClass":"simple-icons:shell"
+            }
+         ]
+      },
+      {
+         "id":"R_kgDONyzeoQ",
+         "name":"Personal-Safety-System---ProtectMe",
+         "createdAt":"2025-02-01T13:52:20Z",
+         "url":"https://github.com/Chaimaaorg/Personal-Safety-System---ProtectMe",
+         "description":"ProtectMe: A Flutter-based personal safety app with IoT integration for real-time location tracking, emergency alerts, and heart rate monitoring on Android and iOS.",
+         "isFork":false,
+         "languages":[
+            {
+               "name":"Python",
+               "iconifyClass":"logos-python"
+            },
+            {
+               "name":"Java",
+               "iconifyClass":"logos-java"
+            }
+         ]
+      },
+      {
+         "id":"R_kgDOONaHpA",
+         "name":"AttendAI",
+         "createdAt":"2025-03-23T17:37:57Z",
+         "url":"https://github.com/Chaimaaorg/AttendAI",
+         "description":"This real-time face recognition attendance system automatically logs attendance using OpenCV and KNN-based recognition.",
+         "isFork":false,
+         "languages":[
+            {
+               "name":"Python",
+               "iconifyClass":"logos-python"
+            }
+         ]
+      },
+      {
+         "id":"R_kgDOOE9rnQ",
+         "name":"DermAid---AI-Copilot-for-Skin-Cancer-Detection",
+         "createdAt":"2025-03-07T21:32:46Z",
+         "url":"https://github.com/Chaimaaorg/DermAid---AI-Copilot-for-Skin-Cancer-Detection",
+         "description":"Skin cancer detection chatbot for a Facebook Page using computer vision and deep learning",
+         "isFork":false,
+         "languages":[
+            {
+               "name":"Python",
+               "iconifyClass":"logos-python"
+            },
+            {
+               "name":"Jupyter Notebook",
+               "iconifyClass":"logos-jupyter"
+            }
+         ]
+      }
+   ]
+}
