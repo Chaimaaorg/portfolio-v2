@@ -11,6 +11,11 @@ import ExperienceImg from "./ExperienceImg";
 class Experience extends Component {
   render() {
     const theme = this.props.theme;
+    
+    // Debug: Log the experience data
+    console.log("Experience data:", experience);
+    console.log("Experiences array:", experience.experiences);
+    
     return (
       <div className="experience-main">
         <Header theme={theme} />
@@ -31,22 +36,36 @@ class Experience extends Component {
                   className="experience-header-detail-text subTitle"
                   style={{ color: theme.greetingSubtitleColor }}
                 >
-                  {experience["description"]}
+                  {experience.description}
                 </p>
               </div>
             </div>
           </Fade>
         </div>
-        <div className="experience-cards-container">
-          {experience["experiences"].map((exp, index) => (
-            <ExperienceCard 
-              key={index}
-              index={index} 
-              totalCards={experience["experiences"].length} 
-              experience={exp} 
-              theme={theme} 
-            />
-          ))}
+              
+        <div className="experience-cards-container" style={{ 
+          maxWidth: '1200px', 
+          margin: '0 auto', 
+          padding: '20px',
+        }}>
+          {experience.experiences && experience.experiences.length > 0 ? (
+            experience.experiences.map((exp, index) => {
+              console.log(`Rendering experience ${index}:`, exp);
+              return (
+                <ExperienceCard 
+                  key={index}
+                  index={index} 
+                  totalCards={experience.experiences.length} 
+                  experience={exp} 
+                  theme={theme} 
+                />
+              );
+            })
+          ) : (
+            <div style={{ color: 'red', fontSize: '18px' }}>
+              No experiences found or experiences array is empty!
+            </div>
+          )}
         </div>
 
         <Footer theme={this.props.theme} onToggle={this.props.onToggle} />

@@ -15,7 +15,7 @@ const splashScreen = {
 };
 //SEO Related settings
 const seo = {
-  title: "Ashutosh's Portfolio",
+  title: "Chaimaa's Portfolio",
   description:
   "A Passionate Data Scientist 🚀 with expertise in AI, ML, and data engineering. Skilled in using LLMs and generative AI to automate, optimize processes, and empower data-driven decisions.",
    og: {
@@ -694,6 +694,7 @@ const experience = {
     "AI Developer experienced in ML, DL, and Software Architecture, with a background in both startups and established firms, and active in open-source communities.",
   header_image_path: "experience.svg",
   experiences: [
+
         {
           title: "Data Scientist",
           company: "Attijwariwafa Bank",
