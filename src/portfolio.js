@@ -725,7 +725,7 @@ const experience = {
           duration: "Jul 2023 – Aug 2023",
           location: "Casablanca, Morocco",
           description:
-            " Designed and developed a cross-platform mobile e-commerce application using Flutter for Android and iOS, integrating Firebase services.",
+            " Designed and developed a fully functional, cross-platform mobile e-commerce application using Flutter for both Android and iOS, featuring real-time database synchronization, user authentication, and cloud storage through seamless integration with Firebase services, enhancing user experience and operational efficiency.",
           color: "#ee3c26",
         },
         {

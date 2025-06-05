@@ -44,7 +44,7 @@ export default class Main extends Component {
             )}
           />
           <Route
-            path="/bigprojects"
+            path="/opensource"
             render={(props) => (
               <BigProjects {...props} theme={this.props.theme} />
             )}

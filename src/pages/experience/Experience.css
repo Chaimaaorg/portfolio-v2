@@ -1,14 +1,19 @@
+/* Experience.css */
 .experience-main {
   width: 100%;
+  min-height: 100vh;
 }
 
 .basic-experience {
   margin-left: 5%;
   margin-right: 5%;
+  padding-bottom: 2rem;
 }
 
 .experience-heading-div {
   display: flex;
+  align-items: center;
+  gap: 2rem;
 }
 
 .experience-heading-div > * {
@@ -37,6 +42,7 @@
   line-height: 1.1;
   text-align: center;
   margin-top: 80px;
+  margin-bottom: 1rem;
 }
 
 .experience-heading-sub-text {
@@ -55,34 +61,111 @@
   font-family: "Google Sans Regular";
 }
 
+.experience-cards-container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 20px;
+}
+
+.no-experiences-message {
+  color: #dc3545;
+  font-size: 18px;
+  text-align: center;
+  padding: 2rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+  border: 1px solid #dee2e6;
+}
+
+/* Tablet styles */
 @media (max-width: 1380px) {
   .experience-heading-text {
     font-size: 50px;
-    margin-top: 80px;
+    margin-top: 60px;
   }
   .experience-heading-sub-text {
     font-size: 25px;
   }
+  .experience-header-detail-text {
+    font-size: 18px;
+  }
 }
 
+/* Small tablet / large mobile */
 @media (max-width: 768px) {
+  .basic-experience {
+    margin-left: 3%;
+    margin-right: 3%;
+  }
+
   .experience-heading-text {
-    font-size: 30px;
-    margin-top: 20px;
+    font-size: 32px;
+    margin-top: 40px;
+  }
+
+  .experience-heading-sub-text {
+    font-size: 22px;
+  }
+
+  .experience-heading-div {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .experience-header-detail-text {
+    font-size: 16px;
+    margin-left: 10px;
+    margin-right: 10px;
+    line-height: 1.5;
+    text-align: center;
+  }
+
+  .experience-cards-container {
+    margin: 1rem auto;
+    padding: 0 10px;
+  }
+}
+
+/* Small mobile devices */
+@media (max-width: 480px) {
+  .basic-experience {
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+
+  .experience-heading-text {
+    font-size: 28px;
+    margin-top: 30px;
   }
 
   .experience-heading-sub-text {
     font-size: 20px;
   }
 
-  .experience-heading-div {
-    flex-direction: column;
+  .experience-header-detail-text {
+    font-size: 14px;
+    margin-left: 5px;
+    margin-right: 5px;
+    line-height: 1.4;
+  }
+
+  .experience-cards-container {
+    padding: 0 5px;
+  }
+}
+
+/* Very small mobile devices */
+@media (max-width: 320px) {
+  .experience-heading-text {
+    font-size: 24px;
+    margin-top: 20px;
+  }
+
+  .experience-heading-sub-text {
+    font-size: 18px;
   }
 
   .experience-header-detail-text {
-    font-size: 16px;
-    margin-right: 0px;
-    line-height: normal;
-    text-align: center;
+    font-size: 13px;
   }
 }

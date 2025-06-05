@@ -1,3 +1,4 @@
+// Experience.js - Updated with better mobile responsiveness
 import React, { Component } from "react";
 import Header from "../../components/header/Header";
 import Footer from "../../components/footer/Footer";
@@ -43,11 +44,7 @@ class Experience extends Component {
           </Fade>
         </div>
               
-        <div className="experience-cards-container" style={{ 
-          maxWidth: '1200px', 
-          margin: '0 auto', 
-          padding: '20px',
-        }}>
+        <div className="experience-cards-container">
           {experience.experiences && experience.experiences.length > 0 ? (
             experience.experiences.map((exp, index) => {
               console.log(`Rendering experience ${index}:`, exp);
@@ -62,7 +59,7 @@ class Experience extends Component {
               );
             })
           ) : (
-            <div style={{ color: 'red', fontSize: '18px' }}>
+            <div className="no-experiences-message" style={{ color: 'red' }}>
               No experiences found or experiences array is empty!
             </div>
           )}

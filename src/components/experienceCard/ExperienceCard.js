@@ -1,3 +1,4 @@
+// ExperienceCard.js - Updated with better mobile responsiveness
 import React, { Component } from "react";
 import "./ExperienceCard.css";
 import { Fade } from "react-reveal";
@@ -8,6 +9,7 @@ class ExperienceCard extends Component {
     const index = this.props.index;
     const totalCards = this.props.totalCards;
     const theme = this.props.theme;
+    
     return (
       <div
         className="experience-list-item"
@@ -18,50 +20,40 @@ class ExperienceCard extends Component {
             <img
               className="experience-card-logo"
               src={require(`../../assets/images/${experience["logo_path"]}`)}
-              alt=""
+              alt={`${experience["company"]} logo`}
             />
           </div>
         </Fade>
+        
         <div className="experience-card-stepper">
           <div
+            className="experience-stepper-dot"
             style={{
-              width: 20,
-              height: 20,
               backgroundColor: `${theme.headerColor}`,
-              borderRadius: 50,
-              zIndex: 100,
             }}
           />
           {index !== totalCards - 1 && (
             <div
+              className="experience-stepper-line"
               style={{
-                height: 190,
-                width: 2,
                 backgroundColor: `${theme.headerColor}`,
-                position: "absolute",
-                marginTop: 20,
               }}
             />
           )}
         </div>
+        
         <Fade right duration={2000} distance="40px">
-          <div style={{ display: "flex", flexDirection: "row" }}>
+          <div className="experience-card-wrapper">
             <div
               className="arrow-left"
               style={{ borderRight: `10px solid ${theme.body}` }}
-            ></div>
+            />
             <div
               className="experience-card"
               style={{ background: `${theme.body}` }}
             >
-              <div
-                style={{
-                  display: "flex",
-                  flexDirection: "row",
-                  justifyContent: "space-between",
-                }}
-              >
-                <div>
+              <div className="experience-card-header">
+                <div className="experience-card-header-left">
                   <h3
                     className="experience-card-title"
                     style={{ color: theme.text }}
@@ -81,31 +73,23 @@ class ExperienceCard extends Component {
                     </a>
                   </p>
                 </div>
-                <div>
-                  <div className="experience-card-heading-right">
-                    <p
-                      className="experience-card-duration"
-                      style={{ color: theme.secondaryText }}
-                    >
-                      {experience["duration"]}
-                    </p>
-                    <p
-                      className="experience-card-location"
-                      style={{ color: theme.secondaryText }}
-                    >
-                      {experience["location"]}
-                    </p>
-                  </div>
+                <div className="experience-card-header-right">
+                  <p
+                    className="experience-card-duration"
+                    style={{ color: theme.secondaryText }}
+                  >
+                    {experience["duration"]}
+                  </p>
+                  <p
+                    className="experience-card-location"
+                    style={{ color: theme.secondaryText }}
+                  >
+                    {experience["location"]}
+                  </p>
                 </div>
               </div>
-              <div
-                style={{
-                  display: "flex",
-                  justifyContent: "flex-start",
-                  marginTop: 20,
-                }}
-              >
-                <div className="repo-description" />
+              
+              <div className="experience-card-description">
                 {experience["description"]}
               </div>
             </div>
