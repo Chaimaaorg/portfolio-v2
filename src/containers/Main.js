@@ -13,7 +13,7 @@ import BigProjects from "../pages/bigprojects/BigProjects";
 export default class Main extends Component {
   render() {
     return (
-      <BrowserRouter basename="/">
+      <BrowserRouter basename="/portfolio-v2">
         <Switch>
           <Route
             path="/"
