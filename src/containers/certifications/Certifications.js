@@ -12,13 +12,23 @@ class Certifications extends Component {
         <div className="certs-header-div">
           <Fade bottom duration={2000} distance="20px">
             <h1 className="certs-header" style={{ color: theme.text }}>
-              Certifications
+              Achievements And Certifications{" "}
+              <span role="img" aria-label="trophy">🏆</span>
             </h1>
           </Fade>
         </div>
         <div className="certs-body-div">
-          {certifications.certifications.map((cert) => {
-            return <CertificationCard certificate={cert} theme={theme} />;
+          {certifications.certifications.map((cert,i) => {
+            return   <CertificationCard
+                  key={i}
+                  cardInfo={{
+                    title: cert.title,
+                    description: cert.subtitle,
+                    image: cert.image,
+                    imageAlt: cert.imageAlt,
+                    footer: cert.footerLink
+                  }}
+                />
           })}
         </div>
       </div>

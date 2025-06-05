@@ -40,9 +40,17 @@
 }
 
 .heading-sub-text {
-  font-size: 30px;
+  /* font-size: 30px;
+  font-weight: 400;
   font-family: "Google Sans Regular";
-  text-align: center;
+  text-align: center; */
+  font-size: 22px;
+  font-weight: lighter;
+  line-height: 30px;
+  margin-top: 0px;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-family: "Google Sans Regular";
 }
 
 @media (max-width: 1380px) {

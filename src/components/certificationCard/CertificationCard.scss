@@ -7,53 +7,48 @@
 }
 .card-title {
   color: $titleColor;
-  font-size: 22px;
+  font-size: 1.375rem;
   line-height: 24px;
   font-weight: 700;
   margin: 15px 0 0 0;
 }
 .card-subtitle {
   color: $cardSubtitle;
-  font-size: 17px;
+  font-size: 1.063rem;
   line-height: 1.5rem;
 }
-.project-card {
-  display: flex;
-  flex-direction: column;
+.certificate-card {
   background-color: $lightBackground2;
+  box-shadow: $lightBoxShadowDark 0px 10px 30px -15px;
   padding: 1.5rem;
   border-radius: 10px;
   border: 1px solid $lightBorder1;
-  justify-content: center;
-}
-.project-card-light {
-  box-shadow: $lightBoxShadowDark 0px 10px 30px -15px;
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
+  /**/
+  width: 30%;
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: 1px solid #d9dbdf;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px #d9dbdf;
+  margin-bottom: 30px;
+  flex: 0 0 30%;
 }
 
-.project-card-dark {
-  box-shadow: 0px 10px 30px -15px $darkBoxShadow;
-  -webkit-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.25s ease;
-}
-
-.repo-languages {
-  margin-left: auto;
-  margin-right: 0px;
-}
-.project-detail {
+.certificate-detail-div {
   text-align: center;
 }
-.project-card-light:hover {
+.certificate-card:hover {
   box-shadow: $lightBoxShadowDark 0px 20px 30px -10px;
 }
-.project-card-dark:hover {
-  box-shadow: 0px 20px 30px -10px $darkBoxShadow;
+.dark-mode.certificate-card:hover {
+  box-shadow: $achievementCertificateCardHoverDark 0px 20px 30px -10px;
 }
-.project-image {
+.certificate-image-div {
   position: relative;
   height: 250px;
   overflow: hidden;
@@ -61,31 +56,34 @@
   justify-content: center;
   align-items: center;
 }
-
-.projects-container {
+.achievement-cards-div {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 1rem 1rem;
 }
-
-.project-card-footer {
+.certificate-card-footer {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.certificate-card-footer span.certificate-tag {
+  background: $buttonColor;
+  color: $lightBackground3;
   vertical-align: middle;
   align-items: center;
   border-radius: 4px;
   display: inline-flex;
-  font-size: 1.1rem;
+  font-size: 0.75rem;
   height: 2em;
   justify-content: center;
   white-space: nowrap;
   line-height: 1.5;
-  margin: 1rem 0.5rem 1.5rem 0;
+  margin: 0 0.5rem 0.5rem 0;
   padding: 0 0.75em;
+  cursor: pointer;
   transition: 0.2s ease-in;
 }
-
-@media (max-width: 768px) {
-  .project-subtitle {
-    font-size: 16px;
-    text-align: center;
-  }
+span.certificate-tag:hover {
+  background: white;
 }

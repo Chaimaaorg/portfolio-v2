@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import "./DegreeCard.css";
 import { Fade, Flip } from "react-reveal";
-
+import Button from "../button/Button";
+import { buttonTheme } from "../../theme";
 class DegreeCard extends Component {
   render() {
     const degree = this.props.degree;
@@ -30,7 +31,7 @@ class DegreeCard extends Component {
           >
             <div
               className="body-header"
-              style={{ backgroundColor: theme.headerColor }}
+              style={{ backgroundColor: theme.body }}
             >
               <div className="body-header-title">
                 <h2 className="card-title" style={{ color: theme.text }}>
@@ -55,20 +56,14 @@ class DegreeCard extends Component {
                 );
               })}
               {degree.website_link && (
-                <a
-                  href={degree.website_link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <div
-                    className="visit-btn"
-                    style={{ backgroundColor: theme.headerColor }}
-                  >
-                    <p className="btn" style={{ color: theme.text }}>
-                      Visit Website
-                    </p>
-                  </div>
-                </a>
+            <Button
+              key={degree.website_link}
+              text="Visit Website"
+              className="visit-btn"
+              href={degree.website_link}
+              newTab={true}
+              theme={buttonTheme}
+            />
               )}
             </div>
           </div>

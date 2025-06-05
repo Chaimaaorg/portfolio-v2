@@ -211,4 +211,15 @@ export const chaimaaTheme = {
   splashBg: "#05505E",
 };
 
+export const buttonTheme = {
+  body: "#ffffff",
+  text: "#05505E",
+  highlight: "#0000fff",
+  dark: "#07292c",
+  secondaryText: "#000000",
+  imageHighlight: "#0a343c",
+  compImgHighlight: "#E1E2E1",
+  jacketColor: "#E1E2E1",
+  headerColor: "#E1E2E1",
+};
 export const chosenTheme = chaimaaTheme;

@@ -1,13 +1,10 @@
 import React from "react";
 import "./BigProjectCard.scss";
 import ProjectLanguages from "../projectLanguages/ProjectLanguages";
+import Button from "../button/Button";
+import {buttonTheme} from "../../theme";
 
 export default function BigProjectCard({ project, i }) {
-  function openUrlInNewTab(url) {
-    if (!url) return;
-    const win = window.open(url, "_blank", "noopener,noreferrer");
-    if (win) win.focus();
-  }
 
   return (
     <div className="projects-container">
@@ -33,13 +30,14 @@ export default function BigProjectCard({ project, i }) {
           {project.footerLink && project.footerLink.length > 0 && (
             <div className="project-card-footer">
               {project.footerLink.map((link, idx) => (
-                <span
-                  key={idx}
-                  className="project-tag"
-                  onClick={() => openUrlInNewTab(link.url)}
-                >
-                  {link.name}
-                </span>
+            <Button
+              key={idx}
+              text={link.name}
+              className="span.project-tag"
+              href={link}
+              newTab={true}
+              theme={buttonTheme}
+            />
               ))}
             </div>
           )}
