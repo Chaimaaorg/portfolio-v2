@@ -6,10 +6,10 @@ class FeelingProud extends Component {
     return (
   <svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
     {/* Multiple monitors setup */}
-    <rect x="100" y="200" width="250" height="180" fill={theme.text} rx="10"/>
+    <rect x="100" y="200" width="250" height="180" fill={theme.jacketColor} rx="10"/>
     <rect x="110" y="210" width="230" height="160" fill="#000" rx="5"/>
     
-    <rect x="400" y="180" width="300" height="200" fill={theme.text} rx="10"/>
+    <rect x="400" y="180" width="300" height="200" fill={theme.jacketColor} rx="10"/>
     <rect x="410" y="190" width="280" height="180" fill="#000" rx="5"/>
     
     {/* Charts and graphs */}
@@ -35,7 +35,7 @@ class FeelingProud extends Component {
     <circle cx="550" cy="240" r="35" fill="none" stroke={theme.imageHighlight} strokeWidth="8"/>
     <circle cx="550" cy="240" r="25" fill={theme.imageHighlight} opacity="0.8"/>
     
-    <rect x="600" y="210" width="80" height="40" fill={theme.text}/>
+    <rect x="600" y="210" width="80" height="40" fill={theme.jacketColor}/>
     <rect x="605" y="215" width="15" height="10" fill={theme.compImgHighlight}/>
     <rect x="625" y="215" width="20" height="10" fill="#4ecdc4"/>
     <rect x="650" y="215" width="25" height="10" fill="#96ceb4"/>
@@ -43,19 +43,19 @@ class FeelingProud extends Component {
     <rect x="640" y="230" width="35" height="10" fill="#E4405F"/>
     
     {/* Monitor stands */}
-    <rect x="200" y="380" width="50" height="30" fill={theme.text}/>
-    <rect x="175" y="400" width="100" height="15" fill={theme.text} rx="7"/>
+    <rect x="200" y="380" width="50" height="30" fill={theme.jacketColor}/>
+    <rect x="175" y="400" width="100" height="15" fill={theme.jacketColor} rx="7"/>
     
-    <rect x="525" y="380" width="50" height="30" fill={theme.text}/>
-    <rect x="500" y="400" width="100" height="15" fill={theme.text} rx="7"/>
+    <rect x="525" y="380" width="50" height="30" fill={theme.jacketColor}/>
+    <rect x="500" y="400" width="100" height="15" fill={theme.jacketColor} rx="7"/>
     
     {/* Desk with equipment */}
-    <rect x="50" y="410" width="700" height="140" fill={theme.text} rx="10"/>
+    <rect x="50" y="410" width="700" height="140" fill={theme.jacketColor} rx="10"/>
     <rect x="50" y="410" width="700" height="20" fill={theme.imageHighlight} rx="10"/>
     
     {/* Keyboard and mouse */}
-    <rect x="300" y="450" width="200" height="30" fill={theme.text} rx="5"/>
-    <ellipse cx="520" cy="465" rx="20" ry="25" fill={theme.text}/>
+    <rect x="300" y="450" width="200" height="30" fill={theme.jacketColor} rx="5"/>
+    <ellipse cx="520" cy="465" rx="20" ry="25" fill={theme.jacketColor}/>
     
     {/* Data visualization books */}
     <rect x="600" y="430" width="60" height="8" fill={theme.compImgHighlight}/>
@@ -64,7 +64,7 @@ class FeelingProud extends Component {
     
     {/* Coffee and notebook */}
     <circle cx="150" cy="460" r="20" fill={theme.imageHighlight}/>
-    <rect x="200" y="440" width="80" height="50" fill={theme.text} rx="3"/>
+    <rect x="200" y="440" width="80" height="50" fill={theme.jacketColor} rx="3"/>
     <rect x="205" y="445" width="70" height="3" fill={theme.imageHighlight}/>
     <rect x="205" y="455" width="50" height="3" fill={theme.imageHighlight}/>
     <rect x="205" y="465" width="60" height="3" fill={theme.imageHighlight}/>

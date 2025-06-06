@@ -219,6 +219,7 @@ export const buttonTheme = {
   secondaryText: "#000000",
   imageHighlight: "#0a343c",
   compImgHighlight: "#E1E2E1",
+  greyChartColor: "#5a5f66", 
   jacketColor: "#E1E2E1",
   headerColor: "#E1E2E1",
 };
