@@ -6,19 +6,17 @@
   
   "version": "0.1.0",
   
-  "homepage": "https://chaimaaourgani.com",
+  "homepage": "https://chaimaaorg.github.io/portfolio-v2",
   
   "scripts": {
   
     
-  "build": "react-scripts build && cpy CNAME build/",
+  "build": "react-scripts --openssl-legacy-provider build",
   
     
   "predeploy": "npm run build",
   
-    
   "deploy": "gh-pages -d build",
-  
     
   "eject": "react-scripts eject",
   
@@ -89,9 +87,6 @@
   },
   
   "devDependencies": {
-  
-    
-  "cpy-cli": "^5.0.0",
   
     
   "dotenv": "^6.2.0",
