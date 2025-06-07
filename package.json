@@ -11,12 +11,14 @@
   "scripts": {
   
     
-  "build": "react-scripts build && cp CNAME build/CNAME",
+  "build": "react-scripts build && cpy CNAME build/",
   
     
   "predeploy": "npm run build",
   
+    
   "deploy": "gh-pages -d build",
+  
     
   "eject": "react-scripts eject",
   
@@ -87,6 +89,9 @@
   },
   
   "devDependencies": {
+  
+    
+  "cpy-cli": "^5.0.0",
   
     
   "dotenv": "^6.2.0",
