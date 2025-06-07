@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Route, Switch, BrowserRouter } from "react-router-dom";
+import { Route, Switch, HashRouter } from "react-router-dom"; 
 import Home from "../pages/home/HomeComponent";
 import Splash from "../pages/splash/Splash";
 import Education from "../pages/education/EducationComponent";
@@ -13,11 +13,11 @@ import BigProjects from "../pages/bigprojects/BigProjects";
 export default class Main extends Component {
   render() {
     return (
-      <BrowserRouter basename="/portfolio-v2">
+      <HashRouter>
         <Switch>
           <Route
-            path="/"
             exact
+            path="/"
             render={(props) =>
               settings.isSplash ? (
                 <Splash {...props} theme={this.props.theme} />
@@ -31,8 +31,8 @@ export default class Main extends Component {
             render={(props) => <Home {...props} theme={this.props.theme} />}
           />
           <Route
-            path="/experience"
             exact
+            path="/experience"
             render={(props) => (
               <Experience {...props} theme={this.props.theme} />
             )}
@@ -53,14 +53,12 @@ export default class Main extends Component {
             path="/contact"
             render={(props) => <Contact {...props} theme={this.props.theme} />}
           />
-
           {settings.isSplash && (
             <Route
               path="/splash"
               render={(props) => <Splash {...props} theme={this.props.theme} />}
             />
           )}
-
           <Route
             path="/projects"
             render={(props) => <Projects {...props} theme={this.props.theme} />}
@@ -70,7 +68,7 @@ export default class Main extends Component {
             render={(props) => <Error404 {...props} theme={this.props.theme} />}
           />
         </Switch>
-      </BrowserRouter>
+      </HashRouter>
     );
   }
 }
