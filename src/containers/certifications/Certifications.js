@@ -2,11 +2,14 @@ import React, { Component } from "react";
 import "./Certifications.css";
 import { Fade } from "react-reveal";
 import { certifications } from "../../portfolio";
+import Button from "../../components/button/Button";
 import CertificationCard from "../../components/certificationCard/CertificationCard";
 
 class Certifications extends Component {
   render() {
     const theme = this.props.theme;
+    const hasCertifications = certifications.certifications && certifications.certifications.length > 0;
+    
     return (
       <div className="main" id="certs">
         <div className="certs-header-div">
@@ -18,19 +21,30 @@ class Certifications extends Component {
           </Fade>
         </div>
         <div className="certs-body-div">
-          {certifications.certifications.map((cert,i) => {
-            return   <CertificationCard
-                  key={i}
-                  cardInfo={{
-                    title: cert.title,
-                    description: cert.subtitle,
-                    image: cert.image,
-                    imageAlt: cert.imageAlt,
-                    footer: cert.footerLink
-                  }}
-                />
+          {hasCertifications && certifications.certifications.map((cert, i) => {
+            return <CertificationCard
+              key={i}
+              cardInfo={{
+                title: cert.title,
+                description: cert.subtitle,
+                image: cert.image,
+                imageAlt: cert.imageAlt,
+                footer: cert.footerLink
+              }}
+            />
           })}
         </div>
+        {hasCertifications && (
+          <div className="certs-button-div">
+            <Button
+              text="See More Certifications"
+              className="project-button"
+              href="https://drive.google.com/file/d/1FjHNEq3dwXor-HBGov0wxTaO2LgCiQmF/view?usp=sharing" 
+              newTab={true}
+              theme={theme}
+            />
+          </div>
+        )}
       </div>
     );
   }

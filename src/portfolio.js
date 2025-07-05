@@ -30,105 +30,63 @@ const bigProjects = {
   subtitle: "SOME DATA SCIENCE PROJECTS THAT I DESIGNED AND DEVELOPED",
   projects: [
     {
-      image: require("./assets/images/realEstateForecasting.webp"),
-      projectName: "Real Estate Price Forecasting Platform",
+      image: require("./assets/images/voxaNote.png"),
+      projectName: "VoxaNote – AI-Powered Meeting Transcription Assistant",
       projectDesc:
-        "An end-to-end machine learning web application for predicting real estate prices.",
+        "Built an end-to-end ASR system with DeepSpeech2 (CTC loss, TensorFlow), audio preprocessing, RNNs, and decoding. Integrated with FastAPI, React, and an LLM for clean, formatted transcriptions.",
       footerLink: [
         {
           name: "View on GitHub",
-          url: "https://github.com/Chaimaaorg/Platform-for-Real-Estate-Price-Forcasting"
+          url: "https://github.com/Chaimaaorg/VoxaNote"
         }
       ],
-      languages : [
-        {
-          "name": "Python",
-          "iconifyClass": "logos-python"
-        },
-        {
-          "name": "Flask",
-          "iconifyClass": "logos-flask"
-        },
-        {
-          "name": "scikit-learn",
-          "iconifyClass": "simple-icons:scikitlearn"
-        },
-        {
-          "name": "HTML",
-          "iconifyClass": "vscode-icons:file-type-html"
-        },
-        {
-          "name": "CSS",
-          "iconifyClass": "vscode-icons:file-type-css"
-        },
-        {
-          "name": "JavaScript",
-          "iconifyClass": "vscode-icons:file-type-js-official"
-        }
+      languages: [
+        { name: "TensorFlow", iconifyClass: "logos-tensorflow" },
+        { name: "FastAPI", iconifyClass: "simple-icons:fastapi" },
+        { name: "React JS", iconifyClass: "logos-react" },
+        { name: "OpenCV", iconifyClass: "logos-opencv" },
+        { name: "Hugging Face", iconifyClass: "simple-icons:huggingface" },
+        { name: "Railway", iconifyClass: "simple-icons:railway" },
+        { name: "GitHub", iconifyClass: "akar-icons:github-fill" }
       ]
-
-
     },
     {
-      image: require("./assets/images/dermaidLogo.webp"),
+      image: require("./assets/images/dermaidLogo.png"),
       projectName: "DermAid - AI Copilot for Skin Cancer Detection",
       projectDesc:
-        "AI-powered dermatology assistant for skin cancer detection, integrated with Messenger.",
+      "Facebook-integrated chatbot for skin cancer detection using PyTorch and ResNeXt-50. Used DialogFlow NLP, OpenCV preprocessing, and deep learning classification trained on Kaggle dataset.",
       footerLink: [
         {
           name: "View on GitHub",
           url: "https://github.com/Chaimaaorg/DermAid---AI-Copilot-for-Skin-Cancer-Detection"
         }
-      ], 
-      languages:[
-        {
-          "name": "PyTorch",
-        "iconifyClass": "simple-icons:pytorch"
-        },
-        {
-          "name": "FastAPI",
-          "iconifyClass": "simple-icons:fastapi"
-        },
-        {
-          "name": "Dialogflow",
-          "iconifyClass": "logos-dialogflow"
-        }
-
-         ]
+      ],
+      languages: [
+        { name: "PyTorch", iconifyClass: "simple-icons:pytorch" },
+        { name: "FastAPI", iconifyClass: "simple-icons:fastapi" },
+        { name: "Dialogflow", iconifyClass: "logos-dialogflow" },
+        { name: "OpenCV", iconifyClass: "logos-opencv" }
+      ]
     },
     {
-      image: require("./assets/images/attendAILogo.webp"),
-      projectName: "AttendAI - Real-Time Face Recognition System",
+      image: require("./assets/images/plantScan.png"),
+      projectName: "PlantScan – AI-Powered Plant Disease Detection",
       projectDesc:
-        "A real-time facial recognition system for contactless attendance tracking, using KNN.",
+        "Developed a real-time plant disease diagnosis web app using a fine-tuned MobileNet, FastAPI backend, and ReactJS frontend, enabling image uploads and instant feedback for farmers and agronomists.",
       footerLink: [
         {
           name: "View on GitHub",
-          url: "https://github.com/Chaimaaorg/AttendAI"
+          url: "https://github.com/Chaimaaorg/PlantScan"
         }
       ],
       languages: [
-        {
-          "name": "Python",
-          "iconifyClass": "logos-python"
-        },
-        {
-          "name": "FastAPI",
-          "iconifyClass": "simple-icons:fastapi"
-        },
-        {
-          "name": "scikit-learn",
-          "iconifyClass": "simple-icons:scikitlearn"
-        },
-        {
-          "name": "OpenCV",
-          "iconifyClass": "logos-opencv"
-        }
+        { name: "TensorFlow", iconifyClass: "logos-tensorflow" },
+        { name: "FastAPI", iconifyClass: "simple-icons:fastapi" },
+        { name: "React JS", iconifyClass: "logos-react" }
       ]
-
-    }
+    },
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: true
 };
 
 //Home Page
@@ -600,90 +558,88 @@ const degrees = {
   ],
 };
 
-
 const certifications = {
   certifications: [
     {
-      title: "🏅 Kaggle Bronze Medalist",
-      subtitle:
-        "Top 10% Kaggle contributor recognized for high-performing machine learning and data science notebooks.",
-      image: require("./assets/images/kaggleLogo.webp"),
-      imageAlt: "Kaggle",
-      footerLink: [
-        {
-          name: "Kaggle Notebooks",
-          url: "https://www.kaggle.com/chaimaourgani/code"
-        }
-      ]
-    },
-    {
       title: "Python for Data Science and Machine Learning Bootcamp",
       subtitle:
-        "Completed full Python ML bootcamp covering data analysis (Pandas, NumPy), visualization (Seaborn, Matplotlib), and core ML (Scikit-learn).",
+        "Mastered Python for ML: Pandas, NumPy, Scikit-learn, Seaborn, and Spark for big data analysis.",
       image: require("./assets/images/udemyLogo.webp"),
       imageAlt: "Udemy Logo",
       footerLink: [
         {
           name: "View Certificate",
-          url: "https://www.udemy.com/certificate/UC-afbb1ab7-953c-4dcf-a899-9fd7510f89c9"
-        }
-      ]
+          url: "https://www.udemy.com/certificate/UC-afbb1ab7-953c-4dcf-a899-9fd7510f89c9",
+        },
+      ],
+    },
+    {
+      title: "Feature Engineering",
+      subtitle:
+        "Kaggle-certified in advanced feature engineering techniques using Pandas, Scikit-learn, and NumPy.",
+      image: require("./assets/images/kaggleLogo.webp"), // Add Kaggle logo asset
+      imageAlt: "Kaggle Logo",
+      footerLink: [
+        {
+          name: "View Certificate",
+          url: "https://www.kaggle.com/learn/certification/chaimaourgani/feature-engineering", // Replace with your Kaggle URL
+        },
+      ],
     },
     {
       title: "Complete TensorFlow 2 and Keras Deep Learning Bootcamp",
       subtitle:
-        "Built and trained deep learning models (CNNs, RNNs, GANs, Autoencoders) for vision and NLP using TensorFlow 2 and Keras.",
+        "Built CNNs, RNNs, GANs, and NLP models using TensorFlow/Keras, with deployment best practices.",
       image: require("./assets/images/udemyLogo.webp"),
       imageAlt: "Udemy Logo",
       footerLink: [
         {
           name: "View Certificate",
-          url: "https://www.udemy.com/certificate/UC-69bf675d-bcf5-4b38-9744-0edfab34a226/"
-        }
-      ]
+          url: "https://www.udemy.com/certificate/UC-69bf675d-bcf5-4b38-9744-0edfab34a226/",
+        },
+      ],
+    },
+    {
+      title: "Computer Vision",
+      subtitle:
+        "Developed CNN-based computer vision models (TensorFlow) for image classification and object detection.",
+      image: require("./assets/images/kaggleLogo.webp"),
+      imageAlt: "Kaggle Logo",
+      footerLink: [
+        {
+          name: "View Certificate",
+          url: "https://www.kaggle.com/learn/certification/chaimaourgani/computer-vision", // Replace with your Kaggle URL
+        },
+      ],
     },
     {
       title: "LLM Fine Tuning Fundamentals + Fine-tune OpenAI GPT Model",
       subtitle:
-        "Mastered GPT fine-tuning, covering data prep, tokenization, training, evaluation, and task-specific adaptation techniques.",
+        "Fine-tuned GPT models using LoRA/QLoRA, with hands-on data prep, training, and evaluation.",
       image: require("./assets/images/udemyLogo.webp"),
       imageAlt: "Udemy Logo",
       footerLink: [
         {
           name: "View Certificate",
-          url: "https://www.udemy.com/certificate/UC-faaad16b-3d60-4db8-ac76-08d5036a98d7"
-        }
-      ]
+          url: "https://www.udemy.com/certificate/UC-faaad16b-3d60-4db8-ac76-08d5036a98d7",
+        },
+      ],
     },
-    {
-      title: "OpenAI & ChatGPT APIs: Expert Fine-tuning for Developers",
+        {
+      title: "MLflow in Action - Master the art of MLOps",
       subtitle:
-        "Fine-tuned GPT-3 for NLP apps, improved chatbot flow and accuracy, with prompt engineering and API deployment experience.",
+        "Implemented end-to-end MLOps pipelines: model tracking, registry, and deployment with MLflow.",
       image: require("./assets/images/udemyLogo.webp"),
       imageAlt: "Udemy Logo",
       footerLink: [
         {
           name: "View Certificate",
-          url: "https://www.udemy.com/certificate/UC-3de5f787-efcb-4edb-a573-8ed706e2919f"
-        }
-      ]
+          url: "https://www.udemy.com/certificate/UC-e27edc10-0f82-4e4e-a9e9-0aea62f5e274",
+        },
+      ],
     },
-    {
-      title: "Vector Databases Fundamentals [NEW]",
-      subtitle:
-        "Specialized in vector databases (Chroma, Pinecone) for embedding search, semantic retrieval, and RAG with LLMs.",
-      image: require("./assets/images/udemyLogo.webp"),
-      imageAlt: "Udemy Logo",
-      footerLink: [
-        {
-          name: "View Certificate",
-          url: "https://www.udemy.com/certificate/UC-20e03521-c61e-4cdf-b601-bb712080f9d8"
-        }
-      ]
-    }
-  ]
+  ],
 };
-
 
 
 // Experience Page
