@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/portfolio-v2/static/css/main.d0bb20cd.chunk.css",
-    "main.js": "/portfolio-v2/static/js/main.700198a4.chunk.js",
-    "main.js.map": "/portfolio-v2/static/js/main.700198a4.chunk.js.map",
+    "main.js": "/portfolio-v2/static/js/main.133b4207.chunk.js",
+    "main.js.map": "/portfolio-v2/static/js/main.133b4207.chunk.js.map",
     "runtime-main.js": "/portfolio-v2/static/js/runtime-main.0c8af7b5.js",
     "runtime-main.js.map": "/portfolio-v2/static/js/runtime-main.0c8af7b5.js.map",
-    "static/js/2.6cd2aeda.chunk.js": "/portfolio-v2/static/js/2.6cd2aeda.chunk.js",
-    "static/js/2.6cd2aeda.chunk.js.map": "/portfolio-v2/static/js/2.6cd2aeda.chunk.js.map",
+    "static/js/2.df331295.chunk.js": "/portfolio-v2/static/js/2.df331295.chunk.js",
+    "static/js/2.df331295.chunk.js.map": "/portfolio-v2/static/js/2.df331295.chunk.js.map",
     "index.html": "/portfolio-v2/index.html",
-    "precache-manifest.4c8dff100db9799cc67aad87da5bec85.js": "/portfolio-v2/precache-manifest.4c8dff100db9799cc67aad87da5bec85.js",
+    "precache-manifest.dcc601d33bfdc7714943905b07f4368a.js": "/portfolio-v2/precache-manifest.dcc601d33bfdc7714943905b07f4368a.js",
     "service-worker.js": "/portfolio-v2/service-worker.js",
     "static/css/main.d0bb20cd.chunk.css.map": "/portfolio-v2/static/css/main.d0bb20cd.chunk.css.map",
     "static/media/index.css": "/portfolio-v2/static/media/Montserrat-Regular.ee653992.ttf",
@@ -27,6 +27,7 @@
     "static/media/data_science.svg": "/portfolio-v2/static/media/data_science.ebf35d7f.svg",
     "static/media/deeplearning_ai_logo.png": "/portfolio-v2/static/media/deeplearning_ai_logo.75a7107b.png",
     "static/media/dermaidLogo.webp": "/portfolio-v2/static/media/dermaidLogo.4edf158f.webp",
+    "static/media/dermaidLogo.png": "/portfolio-v2/static/media/dermaidLogo.8e10e0dd.png",
     "static/media/developerActivity.svg": "/portfolio-v2/static/media/developerActivity.3e23ca14.svg",
     "static/media/dsc_logo.png": "/portfolio-v2/static/media/dsc_logo.63f707f2.png",
     "static/media/education.svg": "/portfolio-v2/static/media/education.3bab7a9d.svg",
@@ -50,6 +51,7 @@
     "static/media/manOnTable.svg": "/portfolio-v2/static/media/manOnTable.83ac24fb.svg",
     "static/media/muffito_logo.png": "/portfolio-v2/static/media/muffito_logo.069938a8.png",
     "static/media/nptel_logo.png": "/portfolio-v2/static/media/nptel_logo.95a12a2b.png",
+    "static/media/plantScan.png": "/portfolio-v2/static/media/plantScan.ae725a31.png",
     "static/media/portfolio.gif": "/portfolio-v2/static/media/portfolio.414dfbd9.gif",
     "static/media/programmer.svg": "/portfolio-v2/static/media/programmer.5faf790b.svg",
     "static/media/projects_image.svg": "/portfolio-v2/static/media/projects_image.b8ba9487.svg",
@@ -61,12 +63,13 @@
     "static/media/talksCardBackAlt.svg": "/portfolio-v2/static/media/talksCardBackAlt.3fa54242.svg",
     "static/media/tiktok_logo.png": "/portfolio-v2/static/media/tiktok_logo.0993e324.png",
     "static/media/udemyLogo.webp": "/portfolio-v2/static/media/udemyLogo.8bea66ff.webp",
-    "static/media/ui_ux_design.svg": "/portfolio-v2/static/media/ui_ux_design.d6363089.svg"
+    "static/media/ui_ux_design.svg": "/portfolio-v2/static/media/ui_ux_design.d6363089.svg",
+    "static/media/voxaNote.png": "/portfolio-v2/static/media/voxaNote.56153cab.png"
   },
   "entrypoints": [
     "static/js/runtime-main.0c8af7b5.js",
-    "static/js/2.6cd2aeda.chunk.js",
+    "static/js/2.df331295.chunk.js",
     "static/css/main.d0bb20cd.chunk.css",
-    "static/js/main.700198a4.chunk.js"
+    "static/js/main.133b4207.chunk.js"
   ]
 }

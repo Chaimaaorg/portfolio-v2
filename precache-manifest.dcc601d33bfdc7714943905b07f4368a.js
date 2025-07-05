@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "cb2357673115735be17ad5371f5e8440",
+    "revision": "8340d44566009798acbf8591f3eecc15",
     "url": "/portfolio-v2/index.html"
   },
   {
-    "revision": "a2dd70446a07fbd38e00",
+    "revision": "e55bd02852f01396026a",
     "url": "/portfolio-v2/static/css/main.d0bb20cd.chunk.css"
   },
   {
-    "revision": "76fb1208a12c9a7bfe11",
-    "url": "/portfolio-v2/static/js/2.6cd2aeda.chunk.js"
+    "revision": "c9c5a21f0693f84caee7",
+    "url": "/portfolio-v2/static/js/2.df331295.chunk.js"
   },
   {
-    "revision": "a2dd70446a07fbd38e00",
-    "url": "/portfolio-v2/static/js/main.700198a4.chunk.js"
+    "revision": "e55bd02852f01396026a",
+    "url": "/portfolio-v2/static/js/main.133b4207.chunk.js"
   },
   {
     "revision": "1a8fd4bc54bcd46fefd0",
@@ -110,6 +110,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "4edf158f67dc832d13b48fd7d875dc18",
     "url": "/portfolio-v2/static/media/dermaidLogo.4edf158f.webp"
+  },
+  {
+    "revision": "8e10e0ddfceddf080e588c9fe58c3045",
+    "url": "/portfolio-v2/static/media/dermaidLogo.8e10e0dd.png"
   },
   {
     "revision": "3e23ca14e7a7c8a7b63d255466749000",
@@ -260,6 +264,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio-v2/static/media/nptel_logo.95a12a2b.png"
   },
   {
+    "revision": "ae725a31f1d6e4c8e220ff1b6c2e823d",
+    "url": "/portfolio-v2/static/media/plantScan.ae725a31.png"
+  },
+  {
     "revision": "414dfbd98516b39255a3e22ed90b3f7d",
     "url": "/portfolio-v2/static/media/portfolio.414dfbd9.gif"
   },
@@ -306,5 +314,9 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "d63630893eb8cb64af65f395d393c481",
     "url": "/portfolio-v2/static/media/ui_ux_design.d6363089.svg"
+  },
+  {
+    "revision": "56153caba9fdcca3c59aa04089c67c14",
+    "url": "/portfolio-v2/static/media/voxaNote.56153cab.png"
   }
 ]);
