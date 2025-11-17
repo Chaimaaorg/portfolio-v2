@@ -8,7 +8,7 @@ export default function Footer() {
     <Fade bottom duration={1000} distance="5px">
       <div className="footer-div">
         <p className="footer-text">
-          {emoji("💫 Crafted by Chaimaâ Ourgani © {new Date().getFullYear()}")}
+          {emoji(`💫 Crafted by Chaimaâ Ourgani © ${new Date().getFullYear()}`)}
         </p>
       </div>
     </Fade>
