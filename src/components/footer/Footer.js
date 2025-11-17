@@ -1,16 +1,18 @@
 import React from "react";
-import "./Footer.scss";
 import { Fade } from "react-reveal";
 import emoji from "react-easy-emoji";
+import "./Footer.scss";
 
 export default function Footer() {
+  const currentYear = new Date().getFullYear();
+
   return (
     <Fade bottom duration={1000} distance="5px">
-      <div className="footer-div">
+      <footer className="footer-div">
         <p className="footer-text">
-          {emoji(`💫 Crafted by Chaimaâ Ourgani © ${new Date().getFullYear()}`)}
+          {emoji(`© ${currentYear} Chaimaâ Ourgani | All Rights Reserved`)}
         </p>
-      </div>
+      </footer>
     </Fade>
   );
 }
