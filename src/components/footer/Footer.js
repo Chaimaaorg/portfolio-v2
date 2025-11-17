@@ -12,13 +12,7 @@ export default function Footer() {
           {emoji("🚀 Built with passion by Chaimaâ Ourgani")}
         </p>
         <p className="footer-text">
-          Based on the{" "}
-          <a
-            href="https://github.com/ashutosh1919/masterPortfolio"
-          >
-            masterPortfolio
-          </a>{" "}
-          Copyright © {new Date().getFullYear()}.
+          © {new Date().getFullYear()} Chaimaâ Ourgani. All rights reserved.
         </p>
       </div>
     </Fade>
